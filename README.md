@@ -6,8 +6,6 @@
 ### [link to deployed-api] (https://coach-api.herokuapp.com/)
 ### [link to deployed version] (https://coach.iamwilliam.co.za)
 
-### https://imgur.com/a/FmXhN98
-
 <img src="public/screenshot.png"
      alt="Screenshot"
      style="float: left; margin-right: 10px;" />
