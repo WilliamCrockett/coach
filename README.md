@@ -8,7 +8,7 @@
 
 ### https://imgur.com/a/FmXhN98
 
-<img src=https://imgur.com/a/FmXhN98
+<img src="public/screenshot.png"
      alt="Screenshot"
      style="float: left; margin-right: 10px;" />
 
