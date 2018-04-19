@@ -1,64 +1,72 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+# Welcome to Coach
+## A simple web app designed to help you manage your training sessions
+### Currently designed for the RSA Olympic Sailing team. I plan to extend it to other sports in the future.
 
-# ember-auth-template
+### [link to api] (https://github.com/WilliamCrockett/coach-api)
+### [link to deployed-api] (https://coach-api.herokuapp.com/)
+### [link to deployed version] (https://coach.iamwilliam.co.za)
 
-A front-end framework template for starting projects with a recent version of
-either the [Rails API Template](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template)
-or the [Express API Template](https://git.generalassemb.ly/ga-wdi-boston/express-api-template).
+### https://imgur.com/a/FmXhN98
 
-_Note: When using the Express API Template, User endpoints may need to be
-modified in order for all authentication actions to execute properly._
+<img src=https://imgur.com/a/FmXhN98
+     alt="Screenshot"
+     style="float: left; margin-right: 10px;" />
 
-At the beginning of each cohort, update from [ember-template](https://git.generalassemb.ly/ga-wdi-boston/ember-template).
+---
 
-## Prerequisites
+## Technologies Used:
 
-- [ember-auth-template-walkthrough](https://git.generalassemb.ly/ga-wdi-boston/ember-auth-template-walkthrough)
+* HTML
+* CSS/SASS
+* Bootstrap
+* Javascript
+* Ember front end framwork
+* Handlebars for rendering data within Ember
+* Ember TinyMCE wysiwyg editor: https://github.com/marucjmar/ember-cli-tinymce
+* Ember Sanitize and Sanitze.js to protect against malicious script insertion: https://github.com/minutebase/ember-sanitize
 
-## Installation
 
-1. [Download](../../archive/master.zip) this template.
-1. Unzip and rename the template directory (`unzip ~/Downloads/ember-auth-template-master.zip`).
-1. Move into the new project and `git init`.
-1. Empty [`README.md`](README.md) and fill with your own content.
-1. Replace all instances of `coach` with your app name. This
-    includes:
-      - [`app/adapters/application.js`](app/adapters/application.js)
-      - [`app/index.html`](app/index.html)
-      - [`app/services/ajax.js`](app/services/ajax.js)
-      - [`config/environment.js`](config/environment.js)
-      - [`package.json`](package.json)
-      - [`tests/index.html`](tests/index.html)
-      - [`tests/unit/initializers/text-field-test.js`](tests/unit/initializers/text-field-test.js)
-1. Install dependencies with `npm install`.
-1. `git add` and `git commit` your changes.
-1. Run the development server with `ember server`. Use the `--proxy` flag to
-    avoid writing development-specific CORS and CSP settings.
+## Premise
 
-## Structure
+After years of working with the RSA Olympic Sailing Team, I wanted to build something
+that would prove useful for tracking and reviewing training sessions. Hence I've built
+this simple web-app which allows users to create and view sessions. I intend to have this
+as a closed deployment initially, where users must be pre-approved to access the site.
+But an extension of this will include the ability to create Organizations, and users within
+Organizations.
 
-Dependencies are stored in [`package.json`](package.json).
+## Known issues
 
-Developers should store styles in [`app/styles`](app/styles) and load them
-from [`app/styles/app.scss`](app/styles/app.scss).
+* none Currently
 
-To deploy an ember-auth-template based SPA, run `grunt deploy`.
 
-## Additional Resources
+## Future release roadmap:
 
-- [Implementing Authentication with Ember Services - Ember
-    Igniter](http://emberigniter.com/implementing-authentication-with-ember-services/)
-- [jpadilla/ember-simple-auth-token: Ember Simple Auth extension that is
-    compatible with token-based authentication like
-    JWT.](https://github.com/jpadilla/ember-simple-auth-token)
-- [simplabs/ember-simple-auth: A library for implementing
-    authentication/authorization in Ember.js
-    applications.](https://github.com/simplabs/ember-simple-auth)
-- [EmberJS Authentication Tutorial](https://auth0.com/blog/emberjs-authentication-tutorial/)
-- [How To Import A Library on Ember.js](https://stackoverflow.com/questions/38919757/how-to-import-a-library-on-ember-js)
+* Export session to PDF
+* Graphs and searches (things like program doing the most sessions, average sessions per week). As well as things like ‘get me all the sessions where the rating was 4 or better' type thing
+* A race mode. Log information from a race, including different legs and write info on a per-leg basis.
+* And results from the day’s mini-series
+* Individual objective raating. (currently you can rate the overall session. Allow user to be able to rate each session objective.)
+* Stretch/dream goal - integrate with smart watch data for calorie information.
+* A mobile app so you can capture a session from your phone, including photo upload. So a coach can log the session as the day is going. Uploads photos from phone as the day is going, etc. This is also a stretch/dream goal.
 
-## [License](LICENSE)
+## Planning information
 
-1. All content is licensed under a CC­BY­NC­SA 4.0 license.
-1. All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+### [Wireframes](https://imgur.com/HhO4AEi)
+### [Wireframes] (https://imgur.com/j1Ek5ae)
+### [Wireframes] (https://imgur.com/yd3fDjk)
+### [Wireframes] (https://imgur.com/PSX8sNX)
+### [Wireframes] (https://imgur.com/5kkg1Lh)
+### [Wireframes] (https://imgur.com/S7v6nD0)
+
+### User Stories:
+
+* As a user I want to be able to sign in
+* As a user I want to be able to sign up
+* As a user I want to be able to change my password
+* As a user I want to be able to view a dashboard of information (v2)
+* As a user I want to be able to create a new training session
+* As a user I want to be able to edit a training session I create
+* As a user I want to be able to view other training sessions
+* As a user I want to be able to view a list of training sessions by date
+*	As a user, I want to change my password, only after logging in
